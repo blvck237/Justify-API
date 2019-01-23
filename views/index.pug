@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="submitText", method="get")
+  textarea(name="justified_text", cols="100", rows="10")
+  br
+  button(type="submit") Submit Text
